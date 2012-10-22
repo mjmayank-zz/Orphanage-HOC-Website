@@ -1,0 +1,216 @@
+@CHARSET "UTF-8";
+
+#banner{
+	text-decoration:none;
+	color:white;
+}
+
+#bar{
+		text-decoration:none;
+	color:white;
+}
+
+a:hover {
+  position: relative;
+  top: 1px;
+}
+
+body{
+background-image: url(obg.jpeg); background-attachment: fixed;
+background-size:cover;
+	font-size:14px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	margin:0;
+	
+}
+header {
+font-size:48px;
+font-family:futura;
+background-size:cover;
+
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+background-image: url(cover.jpeg);
+/*   background: #000; */
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  left: 50%;
+  margin-left: -500px;
+  width: 1000px;
+  height:200px;
+  color: #fff;
+  padding: 0 0 0px 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  z-index:100;
+}
+header2 {
+font-size:24px;
+font-family:futura;
+background: #000;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -500px;
+  width: 1000px;
+  color: #fff;
+  padding: 0 0 5px 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  z-index:4;
+}
+.welcome {
+font-size:30px;
+text-decoration:none;
+}
+
+
+
+
+/*------------------------------------*\
+	NAV
+\*------------------------------------*/
+#nav{
+	left: 50%;
+  	margin-left: -540px;
+	list-style:none;
+	font-weight:bold;
+	margin-bottom:10px;
+	/* Clear floats */
+	margin-top:200px;
+	width:100%;
+	position:absolute;
+	z-index:5;
+	
+
+}
+#nav li{
+	float: left;
+	position:relative;
+	width:166.66px;
+}
+#nav a{
+	display: block;
+	text-align:center;
+	padding:10px;
+	color:#000;
+	background:#fff;
+	text-decoration:none;
+}
+#nav a:hover{
+	color:#fff;
+	background:#000;
+	text-decoration:underline;
+	top: 0px;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+	display:block;
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+	float:none;
+}
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:-40px; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background: gray;
+	text-decoration: none;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	background:gray;
+	text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#333;
+}
+
+
+
+div {
+	width:1000px;
+	margin-left: auto;
+	margin-right:auto;
+}
+.container{
+	position:relative;
+}
+.text{
+	width:900px;
+	padding:25px 50px;
+	position:relative;
+	opacity:1.0;
+	top:220px;
+	z-index:3;
+}
+.background{
+	position:absolute;
+    top:198px;
+    left:0px;
+    height:100%;
+    background-color:white;
+    z-index:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+       filter: alpha(opacity=50);
+       opacity:.9;
+}
+
+p{
+	text-align:justify;
+}
+
+
+
+footer {
+font-size:12px;
+font-family:futura;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  left: 50%;
+  margin-left: -500px;
+  width: 1000px;
+  color: #fff;
+  padding: 0 0 5px 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  
+}
+#twitter {
+	position: fixed;
+	left: 50%;
+  margin-left: -700px;
+  bottom:3px;
+  z-index:100;
+}
+
+#copyright{
+	text-align: left;
+}
+#privacy{
+	float:right;
+	padding: 0px 10px 0 0;
+}
+
+#design{
+		text-decoration:none;
+	color:white;
+}
+#design a{
+		text-decoration:none;
+	color:white;
+}
+.right{
+	padding-left:20%;
+}
