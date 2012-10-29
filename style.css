@@ -16,7 +16,7 @@ a:hover {
 }
 
 body{
-background-image: url(obg.jpeg); background-attachment: fixed;
+background-image: url(obg.jpeg); background-attachment: fixed; /*BACKGROUND PICTURE*/
 background-size:cover;
 	font-size:14px;
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
@@ -44,6 +44,29 @@ background-image: url(cover.jpeg);
   -moz-box-sizing: border-box;
   z-index:100;
 }
+
+.header {
+font-size:48px;
+font-family:futura;
+background-size:cover;
+
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+background-image: url(cover.jpeg); /*COVER PICTURE*/
+/*   background: #000; */
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  left: 50%;
+  margin-left: -500px;
+  width: 1000px;
+  height:200px;
+  color: #fff;
+  padding: 0 0 0px 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  z-index:100;
+}
+
 header2 {
 font-size:24px;
 font-family:futura;
@@ -60,6 +83,10 @@ background: #000;
   z-index:4;
 }
 .welcome {
+font-size:30px;
+text-decoration:none;
+}
+h1 {
 font-size:30px;
 text-decoration:none;
 }
